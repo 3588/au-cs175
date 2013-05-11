@@ -1,0 +1,37 @@
+@charset "utf-8"
+/*  Author: Junjun huang
+   Date:   6,4,2010
+   */
+/*调整边框*/
+table.roundedbox    {margin: 5px; border-collapse: collapse}
+table.roundedbox td {padding: opx}
+
+table.roundedbox td.topl {width: 16px; height: 16px}
+table.roundedbox td.topr {width: 16px; height: 16px}
+
+table.roundedbox td.bottomll {width: 16px; height: 16px}
+table.roundedbox td.bottomr {width: 16px; height: 16px}
+
+table.roundedbox td.top {width: auto; height: 16px}
+table.roundedbox td.bottom {width: auto; height: 16px}
+
+table.roundedbox td.l {width: 16px; height: auto}
+table.roundedbox td.r {width: 16px; height: auto}
+
+/*插入图片*/
+.topl {background:url(topleft.png) no-repeat top left}
+.topr {background:url(topright.png) no-repeat top right}
+.bottoml {background:url(bottomleft.png) no-repeat bottom left}
+.bottomr {background:url(bottomright.png) no-repeat bottom right}
+
+.top {background:url(top.png) repeat-x top}
+.bottom {background:url(bottom.png) repeat-x bottom}
+
+.l {background:url(left.png) repeat-y left}
+.r {background:url(right.png) repeat-y right}
+/*表格2*/
+table.room {border-style:dotted; 
+font-family: Comic Sans MS; 
+border-style: groove; 
+border-width: 3px
+}

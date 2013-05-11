@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* Author: Junjun huang
+   Date:   6,4,2010
+   */
+   div.roundedbox {margin: 5px; 
+   position:relative
+   }
+   div.content {padding: 16px}

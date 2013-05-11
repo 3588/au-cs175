@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+body {text-align:center}
+#top {
+width:780px;
+height:240px;
+background:url(../image/top.gif)}
+#body {margin-right:auto;
+margin-left:auto;
+width:780px
+}
+#link {background:url(../image/link.gif) center;
+width:780px;
+height:66px;
+margin-left: auto;
+margin-right: auto;
+line-height:80px}
+#content {margin-right:auto;
+margin-left:auto}
+#contentl {margin-right:auto;
+margin-left:auto;
+float:left;
+width:470px}
+.introduction {color:#FF9900}
+.introductiona1 {text-align:left;
+font-size:16px}
+#contentr {margin-right:auto;
+margin-left:auto;
+float:right;
+width:310px}
+#foot {margin-right:auto;
+margin-left:auto;
+clear:both;
+width:780px}
+.Collectionap {color:#FF0000;}

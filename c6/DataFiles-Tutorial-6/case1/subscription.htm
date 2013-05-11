@@ -1,0 +1,169 @@
+<html>
+<!-- 
+   New Perspectives on HTML and XHTML
+   Tutorial 6
+   Case Problem 1
+
+   Sudoku Puzzle
+   Author: junjun huang
+   Date:   6/12/2010  
+
+   Filename:         subscription.htm
+   Supporting files: parch.jpg, pcg.css, pcglogo.jpg, sform.css
+-->
+
+   <head>
+   <title>Park City Gazette Subscription</title>
+   <link href="pcg.css" rel="stylesheet" type="text/css" />
+   <link href="sform.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+
+<body>
+
+   <div id="header">
+      <img src="pcglogo.jpg" alt="The Park City Gazette" />
+   </div>
+
+   <div id="leftColumn">
+      <h2><a href="#">Home Page</a></h2>
+      <h2><a href="#">News</a></h2>
+      <ul>
+         <li><a href="#">Local</a></li>
+         <li><a href="#">State</a></li>
+         <li><a href="#">National</a></li>
+         <li><a href="#">International</a></li>
+         <li><a href="#">Sports</a></li>
+         <li><a href="#">Weather</a></li>
+      </ul>
+      <h2><a href="#">Classifieds</a></h2>
+      <ul>
+         <li><a href="#">For Sale</a></li>
+         <li><a href="#">Wanted</a></li>
+         <li><a href="#">Employment</a></li>
+         <li><a href="#">Real Estate</a></li>
+         <li><a href="#">Personals</a></li>
+      </ul>
+      <h2><a href="#">Tourism</a></h2>
+      <ul>
+         <li><a href="#">Attractions</a></li>
+         <li><a href="#">Events</a></li>
+         <li><a href="#">Parks</a></li>
+         <li><a href="#">Camping</a></li>
+      </ul>
+      <h2><a href="#">Subscriptions</a></h2>
+      <h2><a href="#">Contact Us</a></h2>
+   </div>
+
+   <div id="rightColumn">
+      <h1>Subscriptions</h1>
+      <p>Yes, I want to subscribe to the Park City Gazette! <br />
+         I can choose from one of the following options:</p>
+
+<table class="body">
+  <form name="subForm" id="subForm" method="post" action="http://www.theparkcitygazette.com/subscribe">
+ 
+  <table class="subPlans">
+  <tr>
+  <td><input type="radio" name="plan1" id="plan1" value="6 mo./$24" />
+  6 mo./$24 
+  <input type="radio" name="plan2" id="plan2" value="12 mo./$45" />
+  12 mo./$45
+  <input type="radio" name="plan3" id="plan3" value="18 mo./$64" />
+  18 mo./$64
+   <input type="radio" name="plan4" id="plan4" value="24 mo./$80" />
+   24 mo./$80 (best value)   
+  </td>
+	</tr>
+	</table>
+     <table class="floatlabel">
+	<tr>
+		<td valign="top">Name</td>
+		<td> 
+   <input name="name" type="text" id="name" size="50" />
+   </td>
+	</tr>
+	<tr>
+		<td valign="top">Address</td>
+		<td><textarea name="address" id="address" cols="50" rows="6"></textarea></td>
+	</tr>
+	</table>
+	<table class="agreelabel">
+	<tr>
+		<td><input name="agreelabel" id="agreelabel" type="checkbox" value="" />
+  Yes, I wish to pay online by entering my credit card information below.</td>
+	</tr>
+	</table>
+    
+    
+    <table class="payment" >
+		<tr>
+			<td align="right" valign="top">　Credit card</td>
+			<td align="left" valign="top"><select name="cardtype" size="4" id="cardtype">
+      <option value="Amex">American Express</option>
+      <option value="Disc">Discover</option>
+      <option value="MC">MasterCard</option>
+      <option value="Visa">Visa</option>
+    </select>
+    </td>
+		</tr>
+		<tr>
+			<td align="right" valign="top">　name on card </td>
+			<td align="left" valign="top"><input name="cardname" id="cardname" type="text" size="30" /></td>
+		</tr>
+		<tr>
+			<td align="right" valign="top">　Card Number</td>
+			<td align="left" valign="top"><input name="Cardnumber" id="Cardnumber"type="text" size="30" /></td>
+		</tr>
+		<tr>
+			<td align="right" valign="top">　Expiration Date </td>
+			<td align="left" valign="top"><label>
+      <select name="expmonth" id="expyear">
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+            </select> 
+      </label>　
+      
+       <label>
+      <select name="expyear" id="expyear">
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+            </select>
+      </label>
+      
+      </td>
+		</tr>
+		<tr>
+			<td align="right" valign="top" style="margin-top: 10px; margin-bottom: 10px; margin-left: 0px; margin-right: 0px">　<input name="Subscribe" type="submit" value="Subscribe" /></td>
+			<td align="left" valign="top" style="margin-top: 10px; margin-bottom: 10px; margin-left: 0px; margin-right: 0px"> <input type="reset" name="Cancel" id="Cancel" value="Cancel" /></td>
+		</tr>
+	</table>
+	
+   
+  
+  </form>
+  </table>
+  
+ <address>
+         Park City Gazette &bull;
+         801 Main Street &bull;
+         Estes Park, CO 80517 &bull;
+         1 (800) 555-2918
+      </address>
+</body>
+
+</html>
